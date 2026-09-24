@@ -1,0 +1,11 @@
+properties:
+  name: Postgres_sales_landing
+  id: postgres_sales_landing-kc9a
+  type: LANDING
+settings:
+  landingDwSettings:
+    landingArtifactsLocation:
+      dataAssetSchema: '{{task.postgres_sales_landing-kc9a.taskSchema}}'
+      database: '{{task.postgres_sales_landing-kc9a.databaseName}}'
+  landingAppRuntime:
+    sourceCdcFetchIntervalMinutes: 60

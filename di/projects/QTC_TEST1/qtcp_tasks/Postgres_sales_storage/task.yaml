@@ -1,0 +1,12 @@
+properties:
+  name: Postgres_sales_storage
+  id: postgres_sales_storage-kc9b
+  type: STORAGE
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.postgres_sales_storage-kc9b.internalSchema}}'
+    taskSchema: '{{task.postgres_sales_storage-kc9b.taskSchema}}'
+    databaseName: '{{task.postgres_sales_storage-kc9b.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.postgres_sales_storage-kc9b.warehouseName}}'

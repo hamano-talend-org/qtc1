@@ -1,0 +1,14 @@
+sourceConnection: '{{task.postgres_sales_landing-kc9a.sourceConnection}}'
+explicitlySelected:
+  - name: salesorderdetail
+    schema: '{{task.postgres_sales_landing-kc9a:null$_$sales.schema}}'
+    type: TABLE
+  - name: salesorderheader
+    schema: '{{task.postgres_sales_landing-kc9a:null$_$sales.schema}}'
+    type: TABLE
+  - name: customer
+    schema: '{{task.postgres_sales_landing-kc9a:null$_$sales.schema}}'
+    type: TABLE
+  - name: salesperson
+    schema: '{{task.postgres_sales_landing-kc9a:null$_$sales.schema}}'
+    type: TABLE
