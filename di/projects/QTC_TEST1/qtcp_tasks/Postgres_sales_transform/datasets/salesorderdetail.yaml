@@ -1,9 +1,0 @@
-properties:
-  name: salesorderdetail_SalesOrderDetail
-  id: salesorderdetail-kc9j
-  inputDatasets:
-    - taskId: postgres_sales_storage-kc9b
-      datasetId: salesorderdetail-kc9e
-      name: salesorderdetail_SalesOrderDetail
-  tableDef:
-    columns: []
