@@ -1,16 +1,5 @@
 rules:
-  - actionType: RENAME_TABLE
-    ordinal: 1
-    action:
-      renameType: NAME_MAPPING
-      valueMapping:
-        customer: customer_Customer
-        salesorderdetail: salesorderdetail_SalesOrderDetail
-        salesorderheader: salesorderheader_SalesOrderHeader
-        salesperson: salesperson_SalesPerson
-    name: AppendFriendlyNameToTable
   - actionType: RENAME_COLUMN
-    ordinal: 2
     scope:
       whereTableName: customer_Customer
     action:
@@ -25,7 +14,6 @@ rules:
         modifieddate: modifieddate_ModifiedDate
     name: AppendFriendlyNameToColumn_Customer
   - actionType: RENAME_COLUMN
-    ordinal: 3
     scope:
       whereTableName: salesorderheader_SalesOrderHeader
     action:
@@ -59,7 +47,6 @@ rules:
         modifieddate: modifieddate_ModifiedDate
     name: AppendFriendlyNameToColumn_SalesOrderHeader
   - actionType: RENAME_COLUMN
-    ordinal: 4
     scope:
       whereTableName: salesorderdetail_SalesOrderDetail
     action:
@@ -78,7 +65,6 @@ rules:
         modifieddate: modifieddate_ModifiedDate
     name: AppendFriendlyNameToColumn_SalesOrderDetail
   - actionType: RENAME_COLUMN
-    ordinal: 5
     scope:
       whereTableName: salesperson_SalesPerson
     action:

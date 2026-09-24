@@ -1,0 +1,12 @@
+rules:
+  - name: AppendFriendlyNameToTable
+    actionType: RENAME_TABLE
+    scope:
+      whereTableName: '%'
+    action:
+      renameType: NAME_MAPPING
+      valueMapping:
+        customer: customer_Customer
+        salesorderdetail: salesorderdetail_SalesOrderDetail
+        salesorderheader: salesorderheader_SalesOrderHeader
+        salesperson: salesperson_SalesPerson
