@@ -57,7 +57,7 @@ rules:
     name: AppendFriendlyNameToColumn_SalesOrderHeader
   - actionType: RENAME_COLUMN
     scope:
-      whereTableName: salesorderdetail
+      whereTableName: salesorderdetail_SalesOrderDetail
     action:
       renameType: NAME_MAPPING
       valueMapping:
@@ -75,7 +75,7 @@ rules:
     name: AppendFriendlyNameToColumn_SalesOrderDetail
   - actionType: RENAME_COLUMN
     scope:
-      whereTableName: salesperson
+      whereTableName: salesperson_SalesPerson
     action:
       renameType: NAME_MAPPING
       valueMapping:
