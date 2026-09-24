@@ -1,0 +1,12 @@
+properties:
+  name: Postgres_sales_datamart
+  id: postgres_sales_datamart-kdar
+  type: DATAMART
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.postgres_sales_datamart-kdar.internalSchema}}'
+    taskSchema: '{{task.postgres_sales_datamart-kdar.taskSchema}}'
+    databaseName: '{{task.postgres_sales_datamart-kdar.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.postgres_sales_datamart-kdar.warehouseName}}'

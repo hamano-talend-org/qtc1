@@ -1,0 +1,116 @@
+properties:
+  id: customer_customer-kdat
+  name: customer_Customer
+  inputDatasets:
+    - datasetId: customer_customer-kbga
+      name: customer_Customer
+      taskId: '5aSJ5o$b-kc_t'
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: customerid_CustomerID
+        nullable: true
+        primaryKeyOrdinal: 1
+        id: customerid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: personid_PersonID
+        nullable: true
+        id: personid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: storeid_StoreID
+        nullable: true
+        id: storeid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: territoryid_TerritoryID
+        nullable: true
+        id: territoryid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: STRING
+          length: 36
+          originalTypeFull: VARCHAR(36)
+        name: rowguid_RowGuid
+        nullable: true
+        id: rowguid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: modifieddate_ModifiedDate
+        nullable: true
+        id: modifieddate
+        properties:
+          documentMetadata: false
+  dimensionDatasetSettings:
+    type: TYPE1
+    rootDataEntityId:
+      datasetId: customer_customer-kbga
+      name: customer_Customer
+      taskId: '5aSJ5o$b-kc_t'
+    mapping:
+      columns:
+        - columnName: customerid_CustomerID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${customerid_CustomerID}
+            alias:
+              - name: customerid_CustomerID
+                value: customerid_CustomerID
+        - columnName: personid_PersonID
+          type: NONE
+          expression:
+            expressionStatement: ${personid_PersonID}
+            alias:
+              - name: personid_PersonID
+                value: personid_PersonID
+        - columnName: storeid_StoreID
+          type: NONE
+          expression:
+            expressionStatement: ${storeid_StoreID}
+            alias:
+              - name: storeid_StoreID
+                value: storeid_StoreID
+        - columnName: territoryid_TerritoryID
+          type: NONE
+          expression:
+            expressionStatement: ${territoryid_TerritoryID}
+            alias:
+              - name: territoryid_TerritoryID
+                value: territoryid_TerritoryID
+        - columnName: rowguid_RowGuid
+          type: NONE
+          expression:
+            expressionStatement: ${rowguid_RowGuid}
+            alias:
+              - name: rowguid_RowGuid
+                value: rowguid_RowGuid
+        - columnName: modifieddate_ModifiedDate
+          type: NONE
+          expression:
+            expressionStatement: ${modifieddate_ModifiedDate}
+            alias:
+              - name: modifieddate_ModifiedDate
+                value: modifieddate_ModifiedDate
+    fullyType2Sources: false
+    subtype: MODEL_BASED
+    materializedSource: false

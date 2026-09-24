@@ -1,0 +1,171 @@
+properties:
+  id: salesperson_salesperson-quzq
+  name: salesperson_SalesPerson
+  inputDatasets:
+    - datasetId: salesperson_salesperson-kbgd
+      name: salesperson_SalesPerson
+      taskId: '5aSJ5o$b-kc_t'
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: businessentityid_BusinessEntityID
+        nullable: true
+        primaryKeyOrdinal: 1
+        id: businessentityid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: territoryid_TerritoryID
+        nullable: true
+        id: territoryid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: salesquota_SalesQuota
+        nullable: true
+        id: salesquota
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: bonus_Bonus
+        nullable: true
+        id: bonus
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: commissionpct_CommissionPct
+        nullable: true
+        id: commissionpct
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: salesytd_SalesYTD
+        nullable: true
+        id: salesytd
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: saleslastyear_SalesLastYear
+        nullable: true
+        id: saleslastyear
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: STRING
+          length: 36
+          originalTypeFull: VARCHAR(36)
+        name: rowguid_RowGuid
+        nullable: true
+        id: rowguid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: modifieddate_ModifiedDate
+        nullable: true
+        id: modifieddate
+        properties:
+          documentMetadata: false
+  dimensionDatasetSettings:
+    type: TYPE1
+    rootDataEntityId:
+      datasetId: salesperson_salesperson-kbgd
+      name: salesperson_SalesPerson
+      taskId: '5aSJ5o$b-kc_t'
+    mapping:
+      columns:
+        - columnName: businessentityid_BusinessEntityID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${businessentityid_BusinessEntityID}
+            alias:
+              - name: businessentityid_BusinessEntityID
+                value: businessentityid_BusinessEntityID
+        - columnName: territoryid_TerritoryID
+          type: NONE
+          expression:
+            expressionStatement: ${territoryid_TerritoryID}
+            alias:
+              - name: territoryid_TerritoryID
+                value: territoryid_TerritoryID
+        - columnName: salesquota_SalesQuota
+          type: NONE
+          expression:
+            expressionStatement: ${salesquota_SalesQuota}
+            alias:
+              - name: salesquota_SalesQuota
+                value: salesquota_SalesQuota
+        - columnName: bonus_Bonus
+          type: NONE
+          expression:
+            expressionStatement: ${bonus_Bonus}
+            alias:
+              - name: bonus_Bonus
+                value: bonus_Bonus
+        - columnName: commissionpct_CommissionPct
+          type: NONE
+          expression:
+            expressionStatement: ${commissionpct_CommissionPct}
+            alias:
+              - name: commissionpct_CommissionPct
+                value: commissionpct_CommissionPct
+        - columnName: salesytd_SalesYTD
+          type: NONE
+          expression:
+            expressionStatement: ${salesytd_SalesYTD}
+            alias:
+              - name: salesytd_SalesYTD
+                value: salesytd_SalesYTD
+        - columnName: saleslastyear_SalesLastYear
+          type: NONE
+          expression:
+            expressionStatement: ${saleslastyear_SalesLastYear}
+            alias:
+              - name: saleslastyear_SalesLastYear
+                value: saleslastyear_SalesLastYear
+        - columnName: rowguid_RowGuid
+          type: NONE
+          expression:
+            expressionStatement: ${rowguid_RowGuid}
+            alias:
+              - name: rowguid_RowGuid
+                value: rowguid_RowGuid
+        - columnName: modifieddate_ModifiedDate
+          type: NONE
+          expression:
+            expressionStatement: ${modifieddate_ModifiedDate}
+            alias:
+              - name: modifieddate_ModifiedDate
+                value: modifieddate_ModifiedDate
+    fullyType2Sources: false
+    subtype: MODEL_BASED
+    materializedSource: false

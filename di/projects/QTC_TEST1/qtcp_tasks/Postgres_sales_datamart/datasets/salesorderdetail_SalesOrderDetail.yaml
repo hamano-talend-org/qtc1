@@ -1,0 +1,572 @@
+properties:
+  id: salesorderdetail_salesorderdetail-hegc
+  name: salesorderdetail_SalesOrderDetail
+  inputDatasets:
+    - datasetId: salesorderdetail_salesorderdetail-kbgb
+      name: salesorderdetail_SalesOrderDetail
+      taskId: '5aSJ5o$b-kc_t'
+    - datasetId: salesorderheader_salesorderheader-kbgc
+      name: salesorderheader_SalesOrderHeader
+      taskId: '5aSJ5o$b-kc_t'
+  datasetAttributes:
+    materialized: ON
+    hasStandardViewsWithHeaders: ON
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: salesorderid_SalesOrderID
+        primaryKeyOrdinal: 1
+        id: salesorderid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: salesorderdetailid_SalesOrderDetailID
+        primaryKeyOrdinal: 2
+        id: salesorderdetailid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: WSTRING
+          length: 25
+          originalTypeFull: NVARCHAR(25)
+        name: carriertrackingnumber_CarrierTrackingNumber
+        nullable: true
+        id: carriertrackingnumber
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        name: orderqty_OrderQty
+        id: orderqty
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: productid_ProductID
+        id: productid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: specialofferid_SpecialOfferID
+        id: specialofferid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: unitprice_UnitPrice
+        id: unitprice
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: unitpricediscount_UnitPriceDiscount
+        id: unitpricediscount
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: STRING
+          length: 36
+          originalTypeFull: VARCHAR(36)
+        name: rowguid_RowGuid
+        id: rowguid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: modifieddate_ModifiedDate
+        id: modifieddate
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        name: revisionnumber_RevisionNumber
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$revisionnumber
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: orderdate_OrderDate
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$orderdate
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: duedate_DueDate
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$duedate
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: shipdate_ShipDate
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$shipdate
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        name: status_Status
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$status
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: STRING
+          length: 5
+          originalTypeFull: VARCHAR(5)
+        name: onlineorderflag_OnlineOrderFlag
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$onlineorderflag
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: WSTRING
+          length: 25
+          originalTypeFull: NVARCHAR(25)
+        name: purchaseordernumber_PurchaseOrderNumber
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$purchaseordernumber
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        name: accountnumber_AccountNumber
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$accountnumber
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: customerid_CustomerID
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$customerid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: salespersonid_SalesPersonID
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$salespersonid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: territoryid_TerritoryID
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$territoryid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: billtoaddressid_BillToAddressID
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$billtoaddressid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: shiptoaddressid_ShipToAddressID
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$shiptoaddressid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: shipmethodid_ShipMethodID
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$shipmethodid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: creditcardid_CreditCardID
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$creditcardid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        name: creditcardapprovalcode_CreditCardApprovalCode
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$creditcardapprovalcode
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: currencyrateid_CurrencyRateID
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$currencyrateid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: subtotal_SubTotal
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$subtotal
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: taxamt_TaxAmt
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$taxamt
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: freight_Freight
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$freight
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: totaldue_TotalDue
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$totaldue
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: WSTRING
+          length: 128
+          originalTypeFull: NVARCHAR(128)
+        name: comment_Comment
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$comment
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: STRING
+          length: 36
+          originalTypeFull: VARCHAR(36)
+        name: SalesOrderDetail_SalesOrderHeader_rowguid_RowGuid
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$rowguid
+        properties:
+          documentMetadata: false
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: SalesOrderDetail_SalesOrderHeader_modifieddate_ModifiedDate
+        nullable: true
+        id: salesorderdetail_salesorderheader$_$modifieddate
+        properties:
+          documentMetadata: false
+  factDatasetSettings:
+    type: TRANSACTIONAL
+    rootDataEntityId:
+      datasetId: salesorderdetail_salesorderdetail-kbgb
+      name: salesorderdetail_SalesOrderDetail
+      taskId: '5aSJ5o$b-kc_t'
+    entityRelationshipPath:
+      - salesorderdetail_salesorderheader
+    factDimension:
+      - name: customer_Customer
+        dimension:
+          type: NONE
+          datasetId: customer_customer-kdat
+          taskId: postgres_sales_datamart-kdar
+        dimensionRelationshipPath: salesorderdetail_salesorderheader$_$salesorderheader_customer
+        dimensionRelationshipPathDisplayName: SalesOrderDetail_SalesOrderHeader:SalesOrderHeader_Customer
+        dimensionRelationshipPathShortName: ''
+      - name: salesperson_SalesPerson
+        dimension:
+          type: NONE
+          datasetId: salesperson_salesperson-quzq
+          taskId: postgres_sales_datamart-kdar
+        dimensionRelationshipPath: salesorderdetail_salesorderheader$_$salesorderheader_salesperson
+        dimensionRelationshipPathDisplayName: SalesOrderDetail_SalesOrderHeader:SalesOrderHeader_SalesPerson
+        dimensionRelationshipPathShortName: ''
+    mapping:
+      columns:
+        - columnName: salesorderid_SalesOrderID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${salesorderid_SalesOrderID}
+            alias:
+              - name: salesorderid_SalesOrderID
+                value: salesorderid_SalesOrderID
+        - columnName: salesorderdetailid_SalesOrderDetailID
+          type: ROOT_PK
+          expression:
+            expressionStatement: ${salesorderdetailid_SalesOrderDetailID}
+            alias:
+              - name: salesorderdetailid_SalesOrderDetailID
+                value: salesorderdetailid_SalesOrderDetailID
+        - columnName: carriertrackingnumber_CarrierTrackingNumber
+          type: NONE
+          expression:
+            expressionStatement: ${carriertrackingnumber_CarrierTrackingNumber}
+            alias:
+              - name: carriertrackingnumber_CarrierTrackingNumber
+                value: carriertrackingnumber_CarrierTrackingNumber
+        - columnName: orderqty_OrderQty
+          type: NONE
+          expression:
+            expressionStatement: ${orderqty_OrderQty}
+            alias:
+              - name: orderqty_OrderQty
+                value: orderqty_OrderQty
+        - columnName: productid_ProductID
+          type: NONE
+          expression:
+            expressionStatement: ${productid_ProductID}
+            alias:
+              - name: productid_ProductID
+                value: productid_ProductID
+        - columnName: specialofferid_SpecialOfferID
+          type: NONE
+          expression:
+            expressionStatement: ${specialofferid_SpecialOfferID}
+            alias:
+              - name: specialofferid_SpecialOfferID
+                value: specialofferid_SpecialOfferID
+        - columnName: unitprice_UnitPrice
+          type: NONE
+          expression:
+            expressionStatement: ${unitprice_UnitPrice}
+            alias:
+              - name: unitprice_UnitPrice
+                value: unitprice_UnitPrice
+        - columnName: unitpricediscount_UnitPriceDiscount
+          type: NONE
+          expression:
+            expressionStatement: ${unitpricediscount_UnitPriceDiscount}
+            alias:
+              - name: unitpricediscount_UnitPriceDiscount
+                value: unitpricediscount_UnitPriceDiscount
+        - columnName: rowguid_RowGuid
+          type: NONE
+          expression:
+            expressionStatement: ${rowguid_RowGuid}
+            alias:
+              - name: rowguid_RowGuid
+                value: rowguid_RowGuid
+        - columnName: modifieddate_ModifiedDate
+          type: NONE
+          expression:
+            expressionStatement: ${modifieddate_ModifiedDate}
+            alias:
+              - name: modifieddate_ModifiedDate
+                value: modifieddate_ModifiedDate
+        - columnName: revisionnumber_RevisionNumber
+          type: NONE
+          expression:
+            expressionStatement: ${revisionnumber_RevisionNumber}
+            alias:
+              - name: revisionnumber_RevisionNumber
+                value: salesorderdetail_salesorderheader$_$revisionnumber_RevisionNumber
+        - columnName: orderdate_OrderDate
+          type: NONE
+          expression:
+            expressionStatement: ${orderdate_OrderDate}
+            alias:
+              - name: orderdate_OrderDate
+                value: salesorderdetail_salesorderheader$_$orderdate_OrderDate
+        - columnName: duedate_DueDate
+          type: NONE
+          expression:
+            expressionStatement: ${duedate_DueDate}
+            alias:
+              - name: duedate_DueDate
+                value: salesorderdetail_salesorderheader$_$duedate_DueDate
+        - columnName: shipdate_ShipDate
+          type: NONE
+          expression:
+            expressionStatement: ${shipdate_ShipDate}
+            alias:
+              - name: shipdate_ShipDate
+                value: salesorderdetail_salesorderheader$_$shipdate_ShipDate
+        - columnName: status_Status
+          type: NONE
+          expression:
+            expressionStatement: ${status_Status}
+            alias:
+              - name: status_Status
+                value: salesorderdetail_salesorderheader$_$status_Status
+        - columnName: onlineorderflag_OnlineOrderFlag
+          type: NONE
+          expression:
+            expressionStatement: ${onlineorderflag_OnlineOrderFlag}
+            alias:
+              - name: onlineorderflag_OnlineOrderFlag
+                value: salesorderdetail_salesorderheader$_$onlineorderflag_OnlineOrderFlag
+        - columnName: purchaseordernumber_PurchaseOrderNumber
+          type: NONE
+          expression:
+            expressionStatement: ${purchaseordernumber_PurchaseOrderNumber}
+            alias:
+              - name: purchaseordernumber_PurchaseOrderNumber
+                value: salesorderdetail_salesorderheader$_$purchaseordernumber_PurchaseOrderNumber
+        - columnName: accountnumber_AccountNumber
+          type: NONE
+          expression:
+            expressionStatement: ${accountnumber_AccountNumber}
+            alias:
+              - name: accountnumber_AccountNumber
+                value: salesorderdetail_salesorderheader$_$accountnumber_AccountNumber
+        - columnName: customerid_CustomerID
+          type: NONE
+          expression:
+            expressionStatement: ${customerid_CustomerID}
+            alias:
+              - name: customerid_CustomerID
+                value: salesorderdetail_salesorderheader$_$customerid_CustomerID
+        - columnName: salespersonid_SalesPersonID
+          type: NONE
+          expression:
+            expressionStatement: ${salespersonid_SalesPersonID}
+            alias:
+              - name: salespersonid_SalesPersonID
+                value: salesorderdetail_salesorderheader$_$salespersonid_SalesPersonID
+        - columnName: territoryid_TerritoryID
+          type: NONE
+          expression:
+            expressionStatement: ${territoryid_TerritoryID}
+            alias:
+              - name: territoryid_TerritoryID
+                value: salesorderdetail_salesorderheader$_$territoryid_TerritoryID
+        - columnName: billtoaddressid_BillToAddressID
+          type: NONE
+          expression:
+            expressionStatement: ${billtoaddressid_BillToAddressID}
+            alias:
+              - name: billtoaddressid_BillToAddressID
+                value: salesorderdetail_salesorderheader$_$billtoaddressid_BillToAddressID
+        - columnName: shiptoaddressid_ShipToAddressID
+          type: NONE
+          expression:
+            expressionStatement: ${shiptoaddressid_ShipToAddressID}
+            alias:
+              - name: shiptoaddressid_ShipToAddressID
+                value: salesorderdetail_salesorderheader$_$shiptoaddressid_ShipToAddressID
+        - columnName: shipmethodid_ShipMethodID
+          type: NONE
+          expression:
+            expressionStatement: ${shipmethodid_ShipMethodID}
+            alias:
+              - name: shipmethodid_ShipMethodID
+                value: salesorderdetail_salesorderheader$_$shipmethodid_ShipMethodID
+        - columnName: creditcardid_CreditCardID
+          type: NONE
+          expression:
+            expressionStatement: ${creditcardid_CreditCardID}
+            alias:
+              - name: creditcardid_CreditCardID
+                value: salesorderdetail_salesorderheader$_$creditcardid_CreditCardID
+        - columnName: creditcardapprovalcode_CreditCardApprovalCode
+          type: NONE
+          expression:
+            expressionStatement: ${creditcardapprovalcode_CreditCardApprovalCode}
+            alias:
+              - name: creditcardapprovalcode_CreditCardApprovalCode
+                value: salesorderdetail_salesorderheader$_$creditcardapprovalcode_CreditCardApprovalCode
+        - columnName: currencyrateid_CurrencyRateID
+          type: NONE
+          expression:
+            expressionStatement: ${currencyrateid_CurrencyRateID}
+            alias:
+              - name: currencyrateid_CurrencyRateID
+                value: salesorderdetail_salesorderheader$_$currencyrateid_CurrencyRateID
+        - columnName: subtotal_SubTotal
+          type: NONE
+          expression:
+            expressionStatement: ${subtotal_SubTotal}
+            alias:
+              - name: subtotal_SubTotal
+                value: salesorderdetail_salesorderheader$_$subtotal_SubTotal
+        - columnName: taxamt_TaxAmt
+          type: NONE
+          expression:
+            expressionStatement: ${taxamt_TaxAmt}
+            alias:
+              - name: taxamt_TaxAmt
+                value: salesorderdetail_salesorderheader$_$taxamt_TaxAmt
+        - columnName: freight_Freight
+          type: NONE
+          expression:
+            expressionStatement: ${freight_Freight}
+            alias:
+              - name: freight_Freight
+                value: salesorderdetail_salesorderheader$_$freight_Freight
+        - columnName: totaldue_TotalDue
+          type: NONE
+          expression:
+            expressionStatement: ${totaldue_TotalDue}
+            alias:
+              - name: totaldue_TotalDue
+                value: salesorderdetail_salesorderheader$_$totaldue_TotalDue
+        - columnName: comment_Comment
+          type: NONE
+          expression:
+            expressionStatement: ${comment_Comment}
+            alias:
+              - name: comment_Comment
+                value: salesorderdetail_salesorderheader$_$comment_Comment
+        - columnName: SalesOrderDetail_SalesOrderHeader_rowguid_RowGuid
+          type: NONE
+          expression:
+            expressionStatement: ${SalesOrderDetail_SalesOrderHeader_rowguid_RowGuid}
+            alias:
+              - name: SalesOrderDetail_SalesOrderHeader_rowguid_RowGuid
+                value: salesorderdetail_salesorderheader$_$rowguid_RowGuid
+        - columnName: SalesOrderDetail_SalesOrderHeader_modifieddate_ModifiedDate
+          type: NONE
+          expression:
+            expressionStatement: ${SalesOrderDetail_SalesOrderHeader_modifieddate_ModifiedDate}
+            alias:
+              - name: SalesOrderDetail_SalesOrderHeader_modifieddate_ModifiedDate
+                value: salesorderdetail_salesorderheader$_$modifieddate_ModifiedDate
+    subtype: MODEL_BASED
+    materializedSource: false
