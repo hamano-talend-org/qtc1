@@ -1,6 +1,0 @@
-properties:
-  id: salesperson-kc9g
-  name: salesperson_SalesPerson
-  inputDatasets:
-    - datasetId: salesperson
-      taskId: postgres_sales_landing-kc9a
