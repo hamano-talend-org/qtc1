@@ -1,6 +1,0 @@
-properties:
-  id: salesorderdetail-kc9e
-  name: salesorderdetail_SalesOrderDetail
-  inputDatasets:
-    - datasetId: salesorderdetail
-      taskId: postgres_sales_landing-kc9a
