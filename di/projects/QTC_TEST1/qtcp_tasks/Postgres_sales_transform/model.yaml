@@ -1,7 +1,5 @@
 relationships:
-  - id: salesorderdetail_salesorderheader
-    name: SalesOrderDetail_SalesOrderHeader
-    sourceEntity:
+  - sourceEntity:
       type: TABLE
       datasetId: salesorderdetail_salesorderdetail-kbgb
       name: salesorderdetail_SalesOrderDetail
@@ -14,12 +12,11 @@ relationships:
     columnRelationships:
       - sourceColumn: salesorderid_SalesOrderID
         targetColumn: salesorderid_SalesOrderID
-        sourceColumnId: salesorderid_SalesOrderID
-        targetColumnId: salesorderid_SalesOrderID
-
-  - id: salesorderheader_customer
-    name: SalesOrderHeader_Customer
-    sourceEntity:
+        sourceColumnId: salesorderid
+        targetColumnId: salesorderid
+    name: SalesOrderDetail_SalesOrderHeader
+    id: salesorderdetail_salesorderheader
+  - sourceEntity:
       type: TABLE
       datasetId: salesorderheader_salesorderheader-kbgc
       name: salesorderheader_SalesOrderHeader
@@ -32,12 +29,11 @@ relationships:
     columnRelationships:
       - sourceColumn: customerid_CustomerID
         targetColumn: customerid_CustomerID
-        sourceColumnId: customerid_CustomerID
-        targetColumnId: customerid_CustomerID
-
-  - id: salesorderheader_salesperson
-    name: SalesOrderHeader_SalesPerson
-    sourceEntity:
+        sourceColumnId: customerid
+        targetColumnId: customerid
+    name: SalesOrderHeader_Customer
+    id: salesorderheader_customer
+  - sourceEntity:
       type: TABLE
       datasetId: salesorderheader_salesorderheader-kbgc
       name: salesorderheader_SalesOrderHeader
@@ -50,5 +46,7 @@ relationships:
     columnRelationships:
       - sourceColumn: salespersonid_SalesPersonID
         targetColumn: businessentityid_BusinessEntityID
-        sourceColumnId: salespersonid_SalesPersonID
-        targetColumnId: businessentityid_BusinessEntityID
+        sourceColumnId: salespersonid
+        targetColumnId: businessentityid
+    name: SalesOrderHeader_SalesPerson
+    id: salesorderheader_salesperson
