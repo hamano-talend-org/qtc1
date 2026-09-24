@@ -10,8 +10,8 @@ relationships:
       name: salesorderheader_SalesOrderHeader
       taskId: postgres_sales_transform-kc9h
     columnRelationships:
-      - sourceColumn: CustomerID
-        targetColumn: CustomerID
+      - sourceColumn: customerid_CustomerID
+        targetColumn: customerid_CustomerID
         sourceColumnId: customerid_CustomerID
         targetColumnId: customerid_CustomerID
     name: Customer_SalesOrderHeader
@@ -27,8 +27,8 @@ relationships:
       name: salesorderdetail_SalesOrderDetail
       taskId: postgres_sales_transform-kc9h
     columnRelationships:
-      - sourceColumn: SalesOrderID
-        targetColumn: SalesOrderID
+      - sourceColumn: salesorderid_SalesOrderID
+        targetColumn: salesorderid_SalesOrderID
         sourceColumnId: salesorderid_SalesOrderID
         targetColumnId: salesorderid_SalesOrderID
     name: SalesOrderHeader_SalesOrderDetail
@@ -44,8 +44,8 @@ relationships:
       name: salesorderheader_SalesOrderHeader
       taskId: postgres_sales_transform-kc9h
     columnRelationships:
-      - sourceColumn: BusinessEntityID
-        targetColumn: SalesPersonID
+      - sourceColumn: businessentityid_BusinessEntityID
+        targetColumn: salespersonid_SalesPersonID
         sourceColumnId: businessentityid_BusinessEntityID
         targetColumnId: salespersonid_SalesPersonID
     name: SalesPerson_SalesOrderHeader
