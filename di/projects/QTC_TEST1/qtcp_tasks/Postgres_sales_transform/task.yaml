@@ -1,0 +1,12 @@
+properties:
+  name: Postgres_sales_transform
+  id: postgres_sales_transform-kc9h
+  type: TRANSFORM
+settings:
+  artifactsLocation:
+    internalSchema: '{{task.postgres_sales_transform-kc9h.internalSchema}}'
+    taskSchema: '{{task.postgres_sales_transform-kc9h.taskSchema}}'
+    databaseName: '{{task.postgres_sales_transform-kc9h.databaseName}}'
+  taskRuntime:
+    warehouseSelection:
+      warehouseName: '{{task.postgres_sales_transform-kc9h.warehouseName}}'

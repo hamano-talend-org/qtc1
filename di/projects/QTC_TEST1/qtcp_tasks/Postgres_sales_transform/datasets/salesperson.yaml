@@ -1,0 +1,9 @@
+properties:
+  name: salesperson_SalesPerson
+  id: salesperson-kc9l
+  inputDatasets:
+    - taskId: postgres_sales_storage-kc9b
+      datasetId: salesperson-kc9g
+      name: salesperson_SalesPerson
+  tableDef:
+    columns: []
