@@ -1,9 +1,0 @@
-properties:
-  name: customer_Customer
-  id: customer-kc9i
-  inputDatasets:
-    - taskId: postgres_sales_storage-kc9b
-      datasetId: customer-kc9d
-      name: customer_Customer
-  tableDef:
-    columns: []
