@@ -1,12 +1,12 @@
 properties:
   name: Postgres_sales_transform
-  id: postgres_sales_transform-kc9h
+  id: '5aSJ5o$b-kc_t'
   type: TRANSFORM
 settings:
   artifactsLocation:
-    internalSchema: '{{task.postgres_sales_transform-kc9h.internalSchema}}'
-    taskSchema: '{{task.postgres_sales_transform-kc9h.taskSchema}}'
-    databaseName: '{{task.postgres_sales_transform-kc9h.databaseName}}'
+    internalSchema: '{{task.5aSJ5o$b-kc_t.internalSchema}}'
+    taskSchema: '{{task.5aSJ5o$b-kc_t.taskSchema}}'
+    databaseName: '{{task.5aSJ5o$b-kc_t.databaseName}}'
   taskRuntime:
     warehouseSelection:
-      warehouseName: '{{task.postgres_sales_transform-kc9h.warehouseName}}'
+      warehouseName: '{{task.5aSJ5o$b-kc_t.warehouseName}}'

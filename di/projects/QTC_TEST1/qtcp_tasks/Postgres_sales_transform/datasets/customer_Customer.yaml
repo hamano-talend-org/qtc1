@@ -1,5 +1,5 @@
 properties:
-  id: customer-kc9i
+  id: customer_customer-kbga
   name: customer_Customer
   inputDatasets:
     - datasetId: customer-kc9d
@@ -10,66 +10,66 @@ properties:
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: customerid
+        name: customerid_CustomerID
         primaryKeyOrdinal: 1
         expression:
-          expressionStatement: ${customerid}
+          expressionStatement: ${customerid_CustomerID}
           alias:
-            - name: customerid
-              value: customerid
+            - name: customerid_CustomerID
+              value: customerid_CustomerID
         id: customerid
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: personid
+        name: personid_PersonID
         nullable: true
         expression:
-          expressionStatement: ${personid}
+          expressionStatement: ${personid_PersonID}
           alias:
-            - name: personid
-              value: personid
+            - name: personid_PersonID
+              value: personid_PersonID
         id: personid
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: storeid
+        name: storeid_StoreID
         nullable: true
         expression:
-          expressionStatement: ${storeid}
+          expressionStatement: ${storeid_StoreID}
           alias:
-            - name: storeid
-              value: storeid
+            - name: storeid_StoreID
+              value: storeid_StoreID
         id: storeid
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: territoryid
+        name: territoryid_TerritoryID
         nullable: true
         expression:
-          expressionStatement: ${territoryid}
+          expressionStatement: ${territoryid_TerritoryID}
           alias:
-            - name: territoryid
-              value: territoryid
+            - name: territoryid_TerritoryID
+              value: territoryid_TerritoryID
         id: territoryid
       - datatype:
           type: STRING
           length: 36
           originalTypeFull: VARCHAR(36)
-        name: rowguid
+        name: rowguid_RowGuid
         expression:
-          expressionStatement: ${rowguid}
+          expressionStatement: ${rowguid_RowGuid}
           alias:
-            - name: rowguid
-              value: rowguid
+            - name: rowguid_RowGuid
+              value: rowguid_RowGuid
         id: rowguid
       - datatype:
           type: DATETIME
           precision: 6
           originalTypeFull: TIMESTAMP_NTZ(6)
-        name: modifieddate
+        name: modifieddate_ModifiedDate
         expression:
-          expressionStatement: ${modifieddate}
+          expressionStatement: ${modifieddate_ModifiedDate}
           alias:
-            - name: modifieddate
-              value: modifieddate
+            - name: modifieddate_ModifiedDate
+              value: modifieddate_ModifiedDate
         id: modifieddate

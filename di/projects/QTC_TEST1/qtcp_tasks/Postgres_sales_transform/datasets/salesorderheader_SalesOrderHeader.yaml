@@ -1,5 +1,5 @@
 properties:
-  id: salesorderheader-kc9k
+  id: salesorderheader_salesorderheader-kbgc
   name: salesorderheader_SalesOrderHeader
   inputDatasets:
     - datasetId: salesorderheader-kc9f
@@ -10,279 +10,279 @@ properties:
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: salesorderid
+        name: salesorderid_SalesOrderID
         primaryKeyOrdinal: 1
         expression:
-          expressionStatement: ${salesorderid}
+          expressionStatement: ${salesorderid_SalesOrderID}
           alias:
-            - name: salesorderid
-              value: salesorderid
+            - name: salesorderid_SalesOrderID
+              value: salesorderid_SalesOrderID
         id: salesorderid
       - datatype:
           type: INT2
           originalTypeFull: SMALLINT
-        name: revisionnumber
+        name: revisionnumber_RevisionNumber
         expression:
-          expressionStatement: ${revisionnumber}
+          expressionStatement: ${revisionnumber_RevisionNumber}
           alias:
-            - name: revisionnumber
-              value: revisionnumber
+            - name: revisionnumber_RevisionNumber
+              value: revisionnumber_RevisionNumber
         id: revisionnumber
       - datatype:
           type: DATETIME
           precision: 6
           originalTypeFull: TIMESTAMP_NTZ(6)
-        name: orderdate
+        name: orderdate_OrderDate
         expression:
-          expressionStatement: ${orderdate}
+          expressionStatement: ${orderdate_OrderDate}
           alias:
-            - name: orderdate
-              value: orderdate
+            - name: orderdate_OrderDate
+              value: orderdate_OrderDate
         id: orderdate
       - datatype:
           type: DATETIME
           precision: 6
           originalTypeFull: TIMESTAMP_NTZ(6)
-        name: duedate
+        name: duedate_DueDate
         expression:
-          expressionStatement: ${duedate}
+          expressionStatement: ${duedate_DueDate}
           alias:
-            - name: duedate
-              value: duedate
+            - name: duedate_DueDate
+              value: duedate_DueDate
         id: duedate
       - datatype:
           type: DATETIME
           precision: 6
           originalTypeFull: TIMESTAMP_NTZ(6)
-        name: shipdate
+        name: shipdate_ShipDate
         nullable: true
         expression:
-          expressionStatement: ${shipdate}
+          expressionStatement: ${shipdate_ShipDate}
           alias:
-            - name: shipdate
-              value: shipdate
+            - name: shipdate_ShipDate
+              value: shipdate_ShipDate
         id: shipdate
       - datatype:
           type: INT2
           originalTypeFull: SMALLINT
-        name: status
+        name: status_Status
         expression:
-          expressionStatement: ${status}
+          expressionStatement: ${status_Status}
           alias:
-            - name: status
-              value: status
+            - name: status_Status
+              value: status_Status
         id: status
       - datatype:
           type: STRING
           length: 5
           originalTypeFull: VARCHAR(5)
-        name: onlineorderflag
+        name: onlineorderflag_OnlineOrderFlag
         expression:
-          expressionStatement: ${onlineorderflag}
+          expressionStatement: ${onlineorderflag_OnlineOrderFlag}
           alias:
-            - name: onlineorderflag
-              value: onlineorderflag
+            - name: onlineorderflag_OnlineOrderFlag
+              value: onlineorderflag_OnlineOrderFlag
         id: onlineorderflag
       - datatype:
           type: WSTRING
           length: 25
           originalTypeFull: NVARCHAR(25)
-        name: purchaseordernumber
+        name: purchaseordernumber_PurchaseOrderNumber
         nullable: true
         expression:
-          expressionStatement: ${purchaseordernumber}
+          expressionStatement: ${purchaseordernumber_PurchaseOrderNumber}
           alias:
-            - name: purchaseordernumber
-              value: purchaseordernumber
+            - name: purchaseordernumber_PurchaseOrderNumber
+              value: purchaseordernumber_PurchaseOrderNumber
         id: purchaseordernumber
       - datatype:
           type: WSTRING
           length: 15
           originalTypeFull: NVARCHAR(15)
-        name: accountnumber
+        name: accountnumber_AccountNumber
         nullable: true
         expression:
-          expressionStatement: ${accountnumber}
+          expressionStatement: ${accountnumber_AccountNumber}
           alias:
-            - name: accountnumber
-              value: accountnumber
+            - name: accountnumber_AccountNumber
+              value: accountnumber_AccountNumber
         id: accountnumber
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: customerid
+        name: customerid_CustomerID
         expression:
-          expressionStatement: ${customerid}
+          expressionStatement: ${customerid_CustomerID}
           alias:
-            - name: customerid
-              value: customerid
+            - name: customerid_CustomerID
+              value: customerid_CustomerID
         id: customerid
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: salespersonid
+        name: salespersonid_SalesPersonID
         nullable: true
         expression:
-          expressionStatement: ${salespersonid}
+          expressionStatement: ${salespersonid_SalesPersonID}
           alias:
-            - name: salespersonid
-              value: salespersonid
+            - name: salespersonid_SalesPersonID
+              value: salespersonid_SalesPersonID
         id: salespersonid
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: territoryid
+        name: territoryid_TerritoryID
         nullable: true
         expression:
-          expressionStatement: ${territoryid}
+          expressionStatement: ${territoryid_TerritoryID}
           alias:
-            - name: territoryid
-              value: territoryid
+            - name: territoryid_TerritoryID
+              value: territoryid_TerritoryID
         id: territoryid
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: billtoaddressid
+        name: billtoaddressid_BillToAddressID
         expression:
-          expressionStatement: ${billtoaddressid}
+          expressionStatement: ${billtoaddressid_BillToAddressID}
           alias:
-            - name: billtoaddressid
-              value: billtoaddressid
+            - name: billtoaddressid_BillToAddressID
+              value: billtoaddressid_BillToAddressID
         id: billtoaddressid
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: shiptoaddressid
+        name: shiptoaddressid_ShipToAddressID
         expression:
-          expressionStatement: ${shiptoaddressid}
+          expressionStatement: ${shiptoaddressid_ShipToAddressID}
           alias:
-            - name: shiptoaddressid
-              value: shiptoaddressid
+            - name: shiptoaddressid_ShipToAddressID
+              value: shiptoaddressid_ShipToAddressID
         id: shiptoaddressid
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: shipmethodid
+        name: shipmethodid_ShipMethodID
         expression:
-          expressionStatement: ${shipmethodid}
+          expressionStatement: ${shipmethodid_ShipMethodID}
           alias:
-            - name: shipmethodid
-              value: shipmethodid
+            - name: shipmethodid_ShipMethodID
+              value: shipmethodid_ShipMethodID
         id: shipmethodid
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: creditcardid
+        name: creditcardid_CreditCardID
         nullable: true
         expression:
-          expressionStatement: ${creditcardid}
+          expressionStatement: ${creditcardid_CreditCardID}
           alias:
-            - name: creditcardid
-              value: creditcardid
+            - name: creditcardid_CreditCardID
+              value: creditcardid_CreditCardID
         id: creditcardid
       - datatype:
           type: WSTRING
           length: 15
           originalTypeFull: NVARCHAR(15)
-        name: creditcardapprovalcode
+        name: creditcardapprovalcode_CreditCardApprovalCode
         nullable: true
         expression:
-          expressionStatement: ${creditcardapprovalcode}
+          expressionStatement: ${creditcardapprovalcode_CreditCardApprovalCode}
           alias:
-            - name: creditcardapprovalcode
-              value: creditcardapprovalcode
+            - name: creditcardapprovalcode_CreditCardApprovalCode
+              value: creditcardapprovalcode_CreditCardApprovalCode
         id: creditcardapprovalcode
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: currencyrateid
+        name: currencyrateid_CurrencyRateID
         nullable: true
         expression:
-          expressionStatement: ${currencyrateid}
+          expressionStatement: ${currencyrateid_CurrencyRateID}
           alias:
-            - name: currencyrateid
-              value: currencyrateid
+            - name: currencyrateid_CurrencyRateID
+              value: currencyrateid_CurrencyRateID
         id: currencyrateid
       - datatype:
           type: NUMERIC
           precision: 28
           scale: 6
           originalTypeFull: NUMBER(28,6)
-        name: subtotal
+        name: subtotal_SubTotal
         expression:
-          expressionStatement: ${subtotal}
+          expressionStatement: ${subtotal_SubTotal}
           alias:
-            - name: subtotal
-              value: subtotal
+            - name: subtotal_SubTotal
+              value: subtotal_SubTotal
         id: subtotal
       - datatype:
           type: NUMERIC
           precision: 28
           scale: 6
           originalTypeFull: NUMBER(28,6)
-        name: taxamt
+        name: taxamt_TaxAmt
         expression:
-          expressionStatement: ${taxamt}
+          expressionStatement: ${taxamt_TaxAmt}
           alias:
-            - name: taxamt
-              value: taxamt
+            - name: taxamt_TaxAmt
+              value: taxamt_TaxAmt
         id: taxamt
       - datatype:
           type: NUMERIC
           precision: 28
           scale: 6
           originalTypeFull: NUMBER(28,6)
-        name: freight
+        name: freight_Freight
         expression:
-          expressionStatement: ${freight}
+          expressionStatement: ${freight_Freight}
           alias:
-            - name: freight
-              value: freight
+            - name: freight_Freight
+              value: freight_Freight
         id: freight
       - datatype:
           type: NUMERIC
           precision: 28
           scale: 6
           originalTypeFull: NUMBER(28,6)
-        name: totaldue
+        name: totaldue_TotalDue
         nullable: true
         expression:
-          expressionStatement: ${totaldue}
+          expressionStatement: ${totaldue_TotalDue}
           alias:
-            - name: totaldue
-              value: totaldue
+            - name: totaldue_TotalDue
+              value: totaldue_TotalDue
         id: totaldue
       - datatype:
           type: WSTRING
           length: 128
           originalTypeFull: NVARCHAR(128)
-        name: comment
+        name: comment_Comment
         nullable: true
         expression:
-          expressionStatement: ${comment}
+          expressionStatement: ${comment_Comment}
           alias:
-            - name: comment
-              value: comment
+            - name: comment_Comment
+              value: comment_Comment
         id: comment
       - datatype:
           type: STRING
           length: 36
           originalTypeFull: VARCHAR(36)
-        name: rowguid
+        name: rowguid_RowGuid
         expression:
-          expressionStatement: ${rowguid}
+          expressionStatement: ${rowguid_RowGuid}
           alias:
-            - name: rowguid
-              value: rowguid
+            - name: rowguid_RowGuid
+              value: rowguid_RowGuid
         id: rowguid
       - datatype:
           type: DATETIME
           precision: 6
           originalTypeFull: TIMESTAMP_NTZ(6)
-        name: modifieddate
+        name: modifieddate_ModifiedDate
         expression:
-          expressionStatement: ${modifieddate}
+          expressionStatement: ${modifieddate_ModifiedDate}
           alias:
-            - name: modifieddate
-              value: modifieddate
+            - name: modifieddate_ModifiedDate
+              value: modifieddate_ModifiedDate
         id: modifieddate

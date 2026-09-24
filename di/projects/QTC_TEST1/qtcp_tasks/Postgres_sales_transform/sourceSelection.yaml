@@ -1,17 +1,3 @@
-explicitlySelected:
+includePatterns:
   - sourceTask: postgres_sales_storage-kc9b
-    name: customer_Customer
-    type: TABLE
-    sourceTableId: customer-kc9d
-  - sourceTask: postgres_sales_storage-kc9b
-    name: salesorderdetail_SalesOrderDetail
-    type: TABLE
-    sourceTableId: salesorderdetail-kc9e
-  - sourceTask: postgres_sales_storage-kc9b
-    name: salesorderheader_SalesOrderHeader
-    type: TABLE
-    sourceTableId: salesorderheader-kc9f
-  - sourceTask: postgres_sales_storage-kc9b
-    name: salesperson_SalesPerson
-    type: TABLE
-    sourceTableId: salesperson-kc9g
+    tablePattern: '%'
