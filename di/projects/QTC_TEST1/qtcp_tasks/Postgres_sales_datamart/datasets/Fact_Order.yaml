@@ -1,6 +1,6 @@
 properties:
   id: salesorderdetail_salesorderdetail-hegc
-  name: salesorderdetail_SalesOrderDetail
+  name: Fact_Order
   inputDatasets:
     - datasetId: salesorderdetail_salesorderdetail-kbgb
       name: salesorderdetail_SalesOrderDetail
@@ -312,7 +312,7 @@ properties:
     entityRelationshipPath:
       - salesorderdetail_salesorderheader
     factDimension:
-      - name: customer_Customer
+      - name: Dim_Customer
         dimension:
           type: NONE
           datasetId: customer_customer-kdat
@@ -320,7 +320,7 @@ properties:
         dimensionRelationshipPath: salesorderdetail_salesorderheader$_$salesorderheader_customer
         dimensionRelationshipPathDisplayName: SalesOrderDetail_SalesOrderHeader:SalesOrderHeader_Customer
         dimensionRelationshipPathShortName: ''
-      - name: salesperson_SalesPerson
+      - name: Dim_SalesPerson
         dimension:
           type: NONE
           datasetId: salesperson_salesperson-quzq

@@ -1,6 +1,6 @@
 properties:
   id: customer_customer-kdat
-  name: customer_Customer
+  name: Dim_Customer
   inputDatasets:
     - datasetId: customer_customer-kbga
       name: customer_Customer

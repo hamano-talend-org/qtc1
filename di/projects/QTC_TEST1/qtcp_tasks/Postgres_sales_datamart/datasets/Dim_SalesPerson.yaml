@@ -1,6 +1,6 @@
 properties:
   id: salesperson_salesperson-quzq
-  name: salesperson_SalesPerson
+  name: Dim_SalesPerson
   inputDatasets:
     - datasetId: salesperson_salesperson-kbgd
       name: salesperson_SalesPerson
