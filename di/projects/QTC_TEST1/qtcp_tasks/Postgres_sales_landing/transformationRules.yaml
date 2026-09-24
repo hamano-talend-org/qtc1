@@ -1,8 +1,5 @@
 rules:
-  - name: AppendFriendlyNameToTable
-    actionType: RENAME_TABLE
-    scope:
-      whereTableName: '%'
+  - actionType: RENAME_TABLE
     action:
       renameType: NAME_MAPPING
       valueMapping:
@@ -10,3 +7,4 @@ rules:
         salesorderdetail: salesorderdetail_SalesOrderDetail
         salesorderheader: salesorderheader_SalesOrderHeader
         salesperson: salesperson_SalesPerson
+    name: AppendFriendlyNameToTable

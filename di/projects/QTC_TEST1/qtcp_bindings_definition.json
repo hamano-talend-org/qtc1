@@ -40,6 +40,10 @@
     "task-type.transform.databaseSelectionMethod": "",
     "task-type.transform.warehouseName": "",
     "task-type.transform.warehouseSelectionMethod": "",
+    "task.5aSJ5o$b-kc_t.databaseName": "",
+    "task.5aSJ5o$b-kc_t.internalSchema": "",
+    "task.5aSJ5o$b-kc_t.taskSchema": "",
+    "task.5aSJ5o$b-kc_t.warehouseName": "",
     "task.postgres_sales_landing-kc9a.databaseName": "{{task-type.landing.databaseName}}",
     "task.postgres_sales_landing-kc9a.sourceConnection": "",
     "task.postgres_sales_landing-kc9a.taskSchema": "",
@@ -47,11 +51,7 @@
     "task.postgres_sales_storage-kc9b.databaseName": "{{task-type.storage.databaseName}}",
     "task.postgres_sales_storage-kc9b.internalSchema": "",
     "task.postgres_sales_storage-kc9b.taskSchema": "",
-    "task.postgres_sales_storage-kc9b.warehouseName": "{{task-type.storage.warehouseName}}",
-    "task.postgres_sales_transform-kc9h.databaseName": "{{task-type.transform.databaseName}}",
-    "task.postgres_sales_transform-kc9h.internalSchema": "",
-    "task.postgres_sales_transform-kc9h.taskSchema": "",
-    "task.postgres_sales_transform-kc9h.warehouseName": "{{task-type.transform.warehouseName}}"
+    "task.postgres_sales_storage-kc9b.warehouseName": "{{task-type.storage.warehouseName}}"
   },
   "connectionProperties": {
     "task.postgres_sales_landing-kc9a.sourceConnection": {

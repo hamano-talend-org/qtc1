@@ -1,5 +1,5 @@
 properties:
-  id: salesorderdetail-kc9j
+  id: salesorderdetail_salesorderdetail-kbgb
   name: salesorderdetail_SalesOrderDetail
   inputDatasets:
     - datasetId: salesorderdetail-kc9e
@@ -10,110 +10,110 @@ properties:
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: salesorderid
+        name: salesorderid_SalesOrderID
         primaryKeyOrdinal: 1
         expression:
-          expressionStatement: ${salesorderid}
+          expressionStatement: ${salesorderid_SalesOrderID}
           alias:
-            - name: salesorderid
-              value: salesorderid
+            - name: salesorderid_SalesOrderID
+              value: salesorderid_SalesOrderID
         id: salesorderid
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: salesorderdetailid
+        name: salesorderdetailid_SalesOrderDetailID
         primaryKeyOrdinal: 2
         expression:
-          expressionStatement: ${salesorderdetailid}
+          expressionStatement: ${salesorderdetailid_SalesOrderDetailID}
           alias:
-            - name: salesorderdetailid
-              value: salesorderdetailid
+            - name: salesorderdetailid_SalesOrderDetailID
+              value: salesorderdetailid_SalesOrderDetailID
         id: salesorderdetailid
       - datatype:
           type: WSTRING
           length: 25
           originalTypeFull: NVARCHAR(25)
-        name: carriertrackingnumber
+        name: carriertrackingnumber_CarrierTrackingNumber
         nullable: true
         expression:
-          expressionStatement: ${carriertrackingnumber}
+          expressionStatement: ${carriertrackingnumber_CarrierTrackingNumber}
           alias:
-            - name: carriertrackingnumber
-              value: carriertrackingnumber
+            - name: carriertrackingnumber_CarrierTrackingNumber
+              value: carriertrackingnumber_CarrierTrackingNumber
         id: carriertrackingnumber
       - datatype:
           type: INT2
           originalTypeFull: SMALLINT
-        name: orderqty
+        name: orderqty_OrderQty
         expression:
-          expressionStatement: ${orderqty}
+          expressionStatement: ${orderqty_OrderQty}
           alias:
-            - name: orderqty
-              value: orderqty
+            - name: orderqty_OrderQty
+              value: orderqty_OrderQty
         id: orderqty
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: productid
+        name: productid_ProductID
         expression:
-          expressionStatement: ${productid}
+          expressionStatement: ${productid_ProductID}
           alias:
-            - name: productid
-              value: productid
+            - name: productid_ProductID
+              value: productid_ProductID
         id: productid
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: specialofferid
+        name: specialofferid_SpecialOfferID
         expression:
-          expressionStatement: ${specialofferid}
+          expressionStatement: ${specialofferid_SpecialOfferID}
           alias:
-            - name: specialofferid
-              value: specialofferid
+            - name: specialofferid_SpecialOfferID
+              value: specialofferid_SpecialOfferID
         id: specialofferid
       - datatype:
           type: NUMERIC
           precision: 28
           scale: 6
           originalTypeFull: NUMBER(28,6)
-        name: unitprice
+        name: unitprice_UnitPrice
         expression:
-          expressionStatement: ${unitprice}
+          expressionStatement: ${unitprice_UnitPrice}
           alias:
-            - name: unitprice
-              value: unitprice
+            - name: unitprice_UnitPrice
+              value: unitprice_UnitPrice
         id: unitprice
       - datatype:
           type: NUMERIC
           precision: 28
           scale: 6
           originalTypeFull: NUMBER(28,6)
-        name: unitpricediscount
+        name: unitpricediscount_UnitPriceDiscount
         expression:
-          expressionStatement: ${unitpricediscount}
+          expressionStatement: ${unitpricediscount_UnitPriceDiscount}
           alias:
-            - name: unitpricediscount
-              value: unitpricediscount
+            - name: unitpricediscount_UnitPriceDiscount
+              value: unitpricediscount_UnitPriceDiscount
         id: unitpricediscount
       - datatype:
           type: STRING
           length: 36
           originalTypeFull: VARCHAR(36)
-        name: rowguid
+        name: rowguid_RowGuid
         expression:
-          expressionStatement: ${rowguid}
+          expressionStatement: ${rowguid_RowGuid}
           alias:
-            - name: rowguid
-              value: rowguid
+            - name: rowguid_RowGuid
+              value: rowguid_RowGuid
         id: rowguid
       - datatype:
           type: DATETIME
           precision: 6
           originalTypeFull: TIMESTAMP_NTZ(6)
-        name: modifieddate
+        name: modifieddate_ModifiedDate
         expression:
-          expressionStatement: ${modifieddate}
+          expressionStatement: ${modifieddate_ModifiedDate}
           alias:
-            - name: modifieddate
-              value: modifieddate
+            - name: modifieddate_ModifiedDate
+              value: modifieddate_ModifiedDate
         id: modifieddate

@@ -1,5 +1,5 @@
 properties:
-  id: salesperson-kc9l
+  id: salesperson_salesperson-kbgd
   name: salesperson_SalesPerson
   inputDatasets:
     - datasetId: salesperson-kc9g
@@ -10,105 +10,105 @@ properties:
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: businessentityid
+        name: businessentityid_BusinessEntityID
         primaryKeyOrdinal: 1
         expression:
-          expressionStatement: ${businessentityid}
+          expressionStatement: ${businessentityid_BusinessEntityID}
           alias:
-            - name: businessentityid
-              value: businessentityid
+            - name: businessentityid_BusinessEntityID
+              value: businessentityid_BusinessEntityID
         id: businessentityid
       - datatype:
           type: INT4
           originalTypeFull: INTEGER
-        name: territoryid
+        name: territoryid_TerritoryID
         nullable: true
         expression:
-          expressionStatement: ${territoryid}
+          expressionStatement: ${territoryid_TerritoryID}
           alias:
-            - name: territoryid
-              value: territoryid
+            - name: territoryid_TerritoryID
+              value: territoryid_TerritoryID
         id: territoryid
       - datatype:
           type: NUMERIC
           precision: 28
           scale: 6
           originalTypeFull: NUMBER(28,6)
-        name: salesquota
+        name: salesquota_SalesQuota
         nullable: true
         expression:
-          expressionStatement: ${salesquota}
+          expressionStatement: ${salesquota_SalesQuota}
           alias:
-            - name: salesquota
-              value: salesquota
+            - name: salesquota_SalesQuota
+              value: salesquota_SalesQuota
         id: salesquota
       - datatype:
           type: NUMERIC
           precision: 28
           scale: 6
           originalTypeFull: NUMBER(28,6)
-        name: bonus
+        name: bonus_Bonus
         expression:
-          expressionStatement: ${bonus}
+          expressionStatement: ${bonus_Bonus}
           alias:
-            - name: bonus
-              value: bonus
+            - name: bonus_Bonus
+              value: bonus_Bonus
         id: bonus
       - datatype:
           type: NUMERIC
           precision: 28
           scale: 6
           originalTypeFull: NUMBER(28,6)
-        name: commissionpct
+        name: commissionpct_CommissionPct
         expression:
-          expressionStatement: ${commissionpct}
+          expressionStatement: ${commissionpct_CommissionPct}
           alias:
-            - name: commissionpct
-              value: commissionpct
+            - name: commissionpct_CommissionPct
+              value: commissionpct_CommissionPct
         id: commissionpct
       - datatype:
           type: NUMERIC
           precision: 28
           scale: 6
           originalTypeFull: NUMBER(28,6)
-        name: salesytd
+        name: salesytd_SalesYTD
         expression:
-          expressionStatement: ${salesytd}
+          expressionStatement: ${salesytd_SalesYTD}
           alias:
-            - name: salesytd
-              value: salesytd
+            - name: salesytd_SalesYTD
+              value: salesytd_SalesYTD
         id: salesytd
       - datatype:
           type: NUMERIC
           precision: 28
           scale: 6
           originalTypeFull: NUMBER(28,6)
-        name: saleslastyear
+        name: saleslastyear_SalesLastYear
         expression:
-          expressionStatement: ${saleslastyear}
+          expressionStatement: ${saleslastyear_SalesLastYear}
           alias:
-            - name: saleslastyear
-              value: saleslastyear
+            - name: saleslastyear_SalesLastYear
+              value: saleslastyear_SalesLastYear
         id: saleslastyear
       - datatype:
           type: STRING
           length: 36
           originalTypeFull: VARCHAR(36)
-        name: rowguid
+        name: rowguid_RowGuid
         expression:
-          expressionStatement: ${rowguid}
+          expressionStatement: ${rowguid_RowGuid}
           alias:
-            - name: rowguid
-              value: rowguid
+            - name: rowguid_RowGuid
+              value: rowguid_RowGuid
         id: rowguid
       - datatype:
           type: DATETIME
           precision: 6
           originalTypeFull: TIMESTAMP_NTZ(6)
-        name: modifieddate
+        name: modifieddate_ModifiedDate
         expression:
-          expressionStatement: ${modifieddate}
+          expressionStatement: ${modifieddate_ModifiedDate}
           alias:
-            - name: modifieddate
-              value: modifieddate
+            - name: modifieddate_ModifiedDate
+              value: modifieddate_ModifiedDate
         id: modifieddate
