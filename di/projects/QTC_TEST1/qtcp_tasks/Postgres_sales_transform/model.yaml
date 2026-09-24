@@ -1,0 +1,54 @@
+relationships:
+  - id: salesorderdetail_salesorderheader
+    name: SalesOrderDetail_SalesOrderHeader
+    sourceEntity:
+      type: TABLE
+      datasetId: salesorderdetail_salesorderdetail-kbgb
+      name: salesorderdetail_SalesOrderDetail
+      taskId: '5aSJ5o$b-kc_t'
+    targetEntity:
+      type: TABLE
+      datasetId: salesorderheader_salesorderheader-kbgc
+      name: salesorderheader_SalesOrderHeader
+      taskId: '5aSJ5o$b-kc_t'
+    columnRelationships:
+      - sourceColumn: salesorderid_SalesOrderID
+        targetColumn: salesorderid_SalesOrderID
+        sourceColumnId: salesorderid_SalesOrderID
+        targetColumnId: salesorderid_SalesOrderID
+
+  - id: salesorderheader_customer
+    name: SalesOrderHeader_Customer
+    sourceEntity:
+      type: TABLE
+      datasetId: salesorderheader_salesorderheader-kbgc
+      name: salesorderheader_SalesOrderHeader
+      taskId: '5aSJ5o$b-kc_t'
+    targetEntity:
+      type: TABLE
+      datasetId: customer_customer-kbga
+      name: customer_Customer
+      taskId: '5aSJ5o$b-kc_t'
+    columnRelationships:
+      - sourceColumn: customerid_CustomerID
+        targetColumn: customerid_CustomerID
+        sourceColumnId: customerid_CustomerID
+        targetColumnId: customerid_CustomerID
+
+  - id: salesorderheader_salesperson
+    name: SalesOrderHeader_SalesPerson
+    sourceEntity:
+      type: TABLE
+      datasetId: salesorderheader_salesorderheader-kbgc
+      name: salesorderheader_SalesOrderHeader
+      taskId: '5aSJ5o$b-kc_t'
+    targetEntity:
+      type: TABLE
+      datasetId: salesperson_salesperson-kbgd
+      name: salesperson_SalesPerson
+      taskId: '5aSJ5o$b-kc_t'
+    columnRelationships:
+      - sourceColumn: salespersonid_SalesPersonID
+        targetColumn: businessentityid_BusinessEntityID
+        sourceColumnId: salespersonid_SalesPersonID
+        targetColumnId: businessentityid_BusinessEntityID
