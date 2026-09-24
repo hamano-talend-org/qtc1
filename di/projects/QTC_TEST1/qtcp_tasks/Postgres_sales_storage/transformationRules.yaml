@@ -10,3 +10,92 @@ rules:
         salesorderdetail: salesorderdetail_SalesOrderDetail
         salesorderheader: salesorderheader_SalesOrderHeader
         salesperson: salesperson_SalesPerson
+
+  - name: AppendFriendlyNameToColumn_Customer
+    actionType: RENAME_COLUMN
+    scope:
+      whereTableName: customer
+      whereColumnName: '%'
+    action:
+      renameType: NAME_MAPPING
+      valueMapping:
+        customerid: customerid_CustomerID
+        personid: personid_PersonID
+        storeid: storeid_StoreID
+        territoryid: territoryid_TerritoryID
+        accountnumber: accountnumber_AccountNumber
+        rowguid: rowguid_RowGuid
+        modifieddate: modifieddate_ModifiedDate
+
+  - name: AppendFriendlyNameToColumn_SalesOrderHeader
+    actionType: RENAME_COLUMN
+    scope:
+      whereTableName: salesorderheader
+      whereColumnName: '%'
+    action:
+      renameType: NAME_MAPPING
+      valueMapping:
+        salesorderid: salesorderid_SalesOrderID
+        revisionnumber: revisionnumber_RevisionNumber
+        orderdate: orderdate_OrderDate
+        duedate: duedate_DueDate
+        shipdate: shipdate_ShipDate
+        status: status_Status
+        onlineorderflag: onlineorderflag_OnlineOrderFlag
+        salesordernumber: salesordernumber_SalesOrderNumber
+        purchaseordernumber: purchaseordernumber_PurchaseOrderNumber
+        accountnumber: accountnumber_AccountNumber
+        customerid: customerid_CustomerID
+        salespersonid: salespersonid_SalesPersonID
+        territoryid: territoryid_TerritoryID
+        billtoaddressid: billtoaddressid_BillToAddressID
+        shiptoaddressid: shiptoaddressid_ShipToAddressID
+        shipmethodid: shipmethodid_ShipMethodID
+        creditcardid: creditcardid_CreditCardID
+        creditcardapprovalcode: creditcardapprovalcode_CreditCardApprovalCode
+        currencyrateid: currencyrateid_CurrencyRateID
+        subtotal: subtotal_SubTotal
+        taxamt: taxamt_TaxAmt
+        freight: freight_Freight
+        totaldue: totaldue_TotalDue
+        comment: comment_Comment
+        rowguid: rowguid_RowGuid
+        modifieddate: modifieddate_ModifiedDate
+
+  - name: AppendFriendlyNameToColumn_SalesOrderDetail
+    actionType: RENAME_COLUMN
+    scope:
+      whereTableName: salesorderdetail
+      whereColumnName: '%'
+    action:
+      renameType: NAME_MAPPING
+      valueMapping:
+        salesorderid: salesorderid_SalesOrderID
+        salesorderdetailid: salesorderdetailid_SalesOrderDetailID
+        carriertrackingnumber: carriertrackingnumber_CarrierTrackingNumber
+        orderqty: orderqty_OrderQty
+        productid: productid_ProductID
+        specialofferid: specialofferid_SpecialOfferID
+        unitprice: unitprice_UnitPrice
+        unitpricediscount: unitpricediscount_UnitPriceDiscount
+        linetotal: linetotal_LineTotal
+        rowguid: rowguid_RowGuid
+        modifieddate: modifieddate_ModifiedDate
+
+  - name: AppendFriendlyNameToColumn_SalesPerson
+    actionType: RENAME_COLUMN
+    scope:
+      whereTableName: salesperson
+      whereColumnName: '%'
+    action:
+      renameType: NAME_MAPPING
+      valueMapping:
+        businessentityid: businessentityid_BusinessEntityID
+        territoryid: territoryid_TerritoryID
+        salesquota: salesquota_SalesQuota
+        bonus: bonus_Bonus
+        commissionpct: commissionpct_CommissionPct
+        salesytd: salesytd_SalesYTD
+        saleslastyear: saleslastyear_SalesLastYear
+        rowguid: rowguid_RowGuid
+        modifieddate: modifieddate_ModifiedDate
