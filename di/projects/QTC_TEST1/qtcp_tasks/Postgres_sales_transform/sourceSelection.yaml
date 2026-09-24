@@ -1,17 +1,17 @@
 explicitlySelected:
-  - name: customer_Customer
-    sourceTask: postgres_sales_storage-kc9b
+  - sourceTask: postgres_sales_storage-kc9b
+    name: customer_Customer
     type: TABLE
     sourceTableId: customer-kc9d
-  - name: salesorderdetail_SalesOrderDetail
-    sourceTask: postgres_sales_storage-kc9b
+  - sourceTask: postgres_sales_storage-kc9b
+    name: salesorderdetail_SalesOrderDetail
     type: TABLE
     sourceTableId: salesorderdetail-kc9e
-  - name: salesorderheader_SalesOrderHeader
-    sourceTask: postgres_sales_storage-kc9b
+  - sourceTask: postgres_sales_storage-kc9b
+    name: salesorderheader_SalesOrderHeader
     type: TABLE
     sourceTableId: salesorderheader-kc9f
-  - name: salesperson_SalesPerson
-    sourceTask: postgres_sales_storage-kc9b
+  - sourceTask: postgres_sales_storage-kc9b
+    name: salesperson_SalesPerson
     type: TABLE
     sourceTableId: salesperson-kc9g

@@ -1,0 +1,6 @@
+properties:
+  id: salesorderheader-kc9f
+  name: salesorderheader_SalesOrderHeader
+  inputDatasets:
+    - datasetId: salesorderheader
+      taskId: postgres_sales_landing-kc9a

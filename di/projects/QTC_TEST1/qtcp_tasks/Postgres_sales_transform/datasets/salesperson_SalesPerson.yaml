@@ -1,0 +1,114 @@
+properties:
+  id: salesperson-kc9l
+  name: salesperson_SalesPerson
+  inputDatasets:
+    - datasetId: salesperson-kc9g
+      name: salesperson_SalesPerson
+      taskId: postgres_sales_storage-kc9b
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: businessentityid
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${businessentityid}
+          alias:
+            - name: businessentityid
+              value: businessentityid
+        id: businessentityid
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: territoryid
+        nullable: true
+        expression:
+          expressionStatement: ${territoryid}
+          alias:
+            - name: territoryid
+              value: territoryid
+        id: territoryid
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: salesquota
+        nullable: true
+        expression:
+          expressionStatement: ${salesquota}
+          alias:
+            - name: salesquota
+              value: salesquota
+        id: salesquota
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: bonus
+        expression:
+          expressionStatement: ${bonus}
+          alias:
+            - name: bonus
+              value: bonus
+        id: bonus
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: commissionpct
+        expression:
+          expressionStatement: ${commissionpct}
+          alias:
+            - name: commissionpct
+              value: commissionpct
+        id: commissionpct
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: salesytd
+        expression:
+          expressionStatement: ${salesytd}
+          alias:
+            - name: salesytd
+              value: salesytd
+        id: salesytd
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: saleslastyear
+        expression:
+          expressionStatement: ${saleslastyear}
+          alias:
+            - name: saleslastyear
+              value: saleslastyear
+        id: saleslastyear
+      - datatype:
+          type: STRING
+          length: 36
+          originalTypeFull: VARCHAR(36)
+        name: rowguid
+        expression:
+          expressionStatement: ${rowguid}
+          alias:
+            - name: rowguid
+              value: rowguid
+        id: rowguid
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: modifieddate
+        expression:
+          expressionStatement: ${modifieddate}
+          alias:
+            - name: modifieddate
+              value: modifieddate
+        id: modifieddate

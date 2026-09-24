@@ -1,54 +1,52 @@
 relationships:
-  - id: customer_salesorderheader
-    name: Customer_SalesOrderHeader
-    sourceEntity:
+  - sourceEntity:
+      type: TABLE
       datasetId: customer-kc9i
-      taskId: postgres_sales_transform-kc9h
       name: customer_Customer
-      type: TABLE
-    targetEntity:
-      datasetId: salesorderheader-kc9k
       taskId: postgres_sales_transform-kc9h
-      name: salesorderheader_SalesOrderHeader
+    targetEntity:
       type: TABLE
+      datasetId: salesorderheader-kc9k
+      name: salesorderheader_SalesOrderHeader
+      taskId: postgres_sales_transform-kc9h
     columnRelationships:
       - sourceColumn: CustomerID
-        sourceColumnId: customerid_CustomerID
         targetColumn: CustomerID
+        sourceColumnId: customerid_CustomerID
         targetColumnId: customerid_CustomerID
-
-  - id: salesperson_salesorderheader
-    name: SalesPerson_SalesOrderHeader
-    sourceEntity:
-      datasetId: salesperson-kc9l
-      taskId: postgres_sales_transform-kc9h
-      name: salesperson_SalesPerson
+    name: Customer_SalesOrderHeader
+    id: customer_salesorderheader
+  - sourceEntity:
       type: TABLE
-    targetEntity:
       datasetId: salesorderheader-kc9k
-      taskId: postgres_sales_transform-kc9h
       name: salesorderheader_SalesOrderHeader
-      type: TABLE
-    columnRelationships:
-      - sourceColumn: BusinessEntityID
-        sourceColumnId: businessentityid_BusinessEntityID
-        targetColumn: SalesPersonID
-        targetColumnId: salespersonid_SalesPersonID
-
-  - id: salesorderheader_salesorderdetail
-    name: SalesOrderHeader_SalesOrderDetail
-    sourceEntity:
-      datasetId: salesorderheader-kc9k
       taskId: postgres_sales_transform-kc9h
-      name: salesorderheader_SalesOrderHeader
-      type: TABLE
     targetEntity:
+      type: TABLE
       datasetId: salesorderdetail-kc9j
-      taskId: postgres_sales_transform-kc9h
       name: salesorderdetail_SalesOrderDetail
-      type: TABLE
+      taskId: postgres_sales_transform-kc9h
     columnRelationships:
       - sourceColumn: SalesOrderID
-        sourceColumnId: salesorderid_SalesOrderID
         targetColumn: SalesOrderID
+        sourceColumnId: salesorderid_SalesOrderID
         targetColumnId: salesorderid_SalesOrderID
+    name: SalesOrderHeader_SalesOrderDetail
+    id: salesorderheader_salesorderdetail
+  - sourceEntity:
+      type: TABLE
+      datasetId: salesperson-kc9l
+      name: salesperson_SalesPerson
+      taskId: postgres_sales_transform-kc9h
+    targetEntity:
+      type: TABLE
+      datasetId: salesorderheader-kc9k
+      name: salesorderheader_SalesOrderHeader
+      taskId: postgres_sales_transform-kc9h
+    columnRelationships:
+      - sourceColumn: BusinessEntityID
+        targetColumn: SalesPersonID
+        sourceColumnId: businessentityid_BusinessEntityID
+        targetColumnId: salespersonid_SalesPersonID
+    name: SalesPerson_SalesOrderHeader
+    id: salesperson_salesorderheader

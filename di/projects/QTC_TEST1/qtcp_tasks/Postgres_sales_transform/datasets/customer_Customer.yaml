@@ -1,0 +1,75 @@
+properties:
+  id: customer-kc9i
+  name: customer_Customer
+  inputDatasets:
+    - datasetId: customer-kc9d
+      name: customer_Customer
+      taskId: postgres_sales_storage-kc9b
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: customerid
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${customerid}
+          alias:
+            - name: customerid
+              value: customerid
+        id: customerid
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: personid
+        nullable: true
+        expression:
+          expressionStatement: ${personid}
+          alias:
+            - name: personid
+              value: personid
+        id: personid
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: storeid
+        nullable: true
+        expression:
+          expressionStatement: ${storeid}
+          alias:
+            - name: storeid
+              value: storeid
+        id: storeid
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: territoryid
+        nullable: true
+        expression:
+          expressionStatement: ${territoryid}
+          alias:
+            - name: territoryid
+              value: territoryid
+        id: territoryid
+      - datatype:
+          type: STRING
+          length: 36
+          originalTypeFull: VARCHAR(36)
+        name: rowguid
+        expression:
+          expressionStatement: ${rowguid}
+          alias:
+            - name: rowguid
+              value: rowguid
+        id: rowguid
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: modifieddate
+        expression:
+          expressionStatement: ${modifieddate}
+          alias:
+            - name: modifieddate
+              value: modifieddate
+        id: modifieddate

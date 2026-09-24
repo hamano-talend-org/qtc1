@@ -1,0 +1,288 @@
+properties:
+  id: salesorderheader-kc9k
+  name: salesorderheader_SalesOrderHeader
+  inputDatasets:
+    - datasetId: salesorderheader-kc9f
+      name: salesorderheader_SalesOrderHeader
+      taskId: postgres_sales_storage-kc9b
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: salesorderid
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${salesorderid}
+          alias:
+            - name: salesorderid
+              value: salesorderid
+        id: salesorderid
+      - datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        name: revisionnumber
+        expression:
+          expressionStatement: ${revisionnumber}
+          alias:
+            - name: revisionnumber
+              value: revisionnumber
+        id: revisionnumber
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: orderdate
+        expression:
+          expressionStatement: ${orderdate}
+          alias:
+            - name: orderdate
+              value: orderdate
+        id: orderdate
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: duedate
+        expression:
+          expressionStatement: ${duedate}
+          alias:
+            - name: duedate
+              value: duedate
+        id: duedate
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: shipdate
+        nullable: true
+        expression:
+          expressionStatement: ${shipdate}
+          alias:
+            - name: shipdate
+              value: shipdate
+        id: shipdate
+      - datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        name: status
+        expression:
+          expressionStatement: ${status}
+          alias:
+            - name: status
+              value: status
+        id: status
+      - datatype:
+          type: STRING
+          length: 5
+          originalTypeFull: VARCHAR(5)
+        name: onlineorderflag
+        expression:
+          expressionStatement: ${onlineorderflag}
+          alias:
+            - name: onlineorderflag
+              value: onlineorderflag
+        id: onlineorderflag
+      - datatype:
+          type: WSTRING
+          length: 25
+          originalTypeFull: NVARCHAR(25)
+        name: purchaseordernumber
+        nullable: true
+        expression:
+          expressionStatement: ${purchaseordernumber}
+          alias:
+            - name: purchaseordernumber
+              value: purchaseordernumber
+        id: purchaseordernumber
+      - datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        name: accountnumber
+        nullable: true
+        expression:
+          expressionStatement: ${accountnumber}
+          alias:
+            - name: accountnumber
+              value: accountnumber
+        id: accountnumber
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: customerid
+        expression:
+          expressionStatement: ${customerid}
+          alias:
+            - name: customerid
+              value: customerid
+        id: customerid
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: salespersonid
+        nullable: true
+        expression:
+          expressionStatement: ${salespersonid}
+          alias:
+            - name: salespersonid
+              value: salespersonid
+        id: salespersonid
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: territoryid
+        nullable: true
+        expression:
+          expressionStatement: ${territoryid}
+          alias:
+            - name: territoryid
+              value: territoryid
+        id: territoryid
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: billtoaddressid
+        expression:
+          expressionStatement: ${billtoaddressid}
+          alias:
+            - name: billtoaddressid
+              value: billtoaddressid
+        id: billtoaddressid
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: shiptoaddressid
+        expression:
+          expressionStatement: ${shiptoaddressid}
+          alias:
+            - name: shiptoaddressid
+              value: shiptoaddressid
+        id: shiptoaddressid
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: shipmethodid
+        expression:
+          expressionStatement: ${shipmethodid}
+          alias:
+            - name: shipmethodid
+              value: shipmethodid
+        id: shipmethodid
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: creditcardid
+        nullable: true
+        expression:
+          expressionStatement: ${creditcardid}
+          alias:
+            - name: creditcardid
+              value: creditcardid
+        id: creditcardid
+      - datatype:
+          type: WSTRING
+          length: 15
+          originalTypeFull: NVARCHAR(15)
+        name: creditcardapprovalcode
+        nullable: true
+        expression:
+          expressionStatement: ${creditcardapprovalcode}
+          alias:
+            - name: creditcardapprovalcode
+              value: creditcardapprovalcode
+        id: creditcardapprovalcode
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: currencyrateid
+        nullable: true
+        expression:
+          expressionStatement: ${currencyrateid}
+          alias:
+            - name: currencyrateid
+              value: currencyrateid
+        id: currencyrateid
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: subtotal
+        expression:
+          expressionStatement: ${subtotal}
+          alias:
+            - name: subtotal
+              value: subtotal
+        id: subtotal
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: taxamt
+        expression:
+          expressionStatement: ${taxamt}
+          alias:
+            - name: taxamt
+              value: taxamt
+        id: taxamt
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: freight
+        expression:
+          expressionStatement: ${freight}
+          alias:
+            - name: freight
+              value: freight
+        id: freight
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: totaldue
+        nullable: true
+        expression:
+          expressionStatement: ${totaldue}
+          alias:
+            - name: totaldue
+              value: totaldue
+        id: totaldue
+      - datatype:
+          type: WSTRING
+          length: 128
+          originalTypeFull: NVARCHAR(128)
+        name: comment
+        nullable: true
+        expression:
+          expressionStatement: ${comment}
+          alias:
+            - name: comment
+              value: comment
+        id: comment
+      - datatype:
+          type: STRING
+          length: 36
+          originalTypeFull: VARCHAR(36)
+        name: rowguid
+        expression:
+          expressionStatement: ${rowguid}
+          alias:
+            - name: rowguid
+              value: rowguid
+        id: rowguid
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: modifieddate
+        expression:
+          expressionStatement: ${modifieddate}
+          alias:
+            - name: modifieddate
+              value: modifieddate
+        id: modifieddate

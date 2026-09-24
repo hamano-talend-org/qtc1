@@ -1,0 +1,119 @@
+properties:
+  id: salesorderdetail-kc9j
+  name: salesorderdetail_SalesOrderDetail
+  inputDatasets:
+    - datasetId: salesorderdetail-kc9e
+      name: salesorderdetail_SalesOrderDetail
+      taskId: postgres_sales_storage-kc9b
+  tableDef:
+    columns:
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: salesorderid
+        primaryKeyOrdinal: 1
+        expression:
+          expressionStatement: ${salesorderid}
+          alias:
+            - name: salesorderid
+              value: salesorderid
+        id: salesorderid
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: salesorderdetailid
+        primaryKeyOrdinal: 2
+        expression:
+          expressionStatement: ${salesorderdetailid}
+          alias:
+            - name: salesorderdetailid
+              value: salesorderdetailid
+        id: salesorderdetailid
+      - datatype:
+          type: WSTRING
+          length: 25
+          originalTypeFull: NVARCHAR(25)
+        name: carriertrackingnumber
+        nullable: true
+        expression:
+          expressionStatement: ${carriertrackingnumber}
+          alias:
+            - name: carriertrackingnumber
+              value: carriertrackingnumber
+        id: carriertrackingnumber
+      - datatype:
+          type: INT2
+          originalTypeFull: SMALLINT
+        name: orderqty
+        expression:
+          expressionStatement: ${orderqty}
+          alias:
+            - name: orderqty
+              value: orderqty
+        id: orderqty
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: productid
+        expression:
+          expressionStatement: ${productid}
+          alias:
+            - name: productid
+              value: productid
+        id: productid
+      - datatype:
+          type: INT4
+          originalTypeFull: INTEGER
+        name: specialofferid
+        expression:
+          expressionStatement: ${specialofferid}
+          alias:
+            - name: specialofferid
+              value: specialofferid
+        id: specialofferid
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: unitprice
+        expression:
+          expressionStatement: ${unitprice}
+          alias:
+            - name: unitprice
+              value: unitprice
+        id: unitprice
+      - datatype:
+          type: NUMERIC
+          precision: 28
+          scale: 6
+          originalTypeFull: NUMBER(28,6)
+        name: unitpricediscount
+        expression:
+          expressionStatement: ${unitpricediscount}
+          alias:
+            - name: unitpricediscount
+              value: unitpricediscount
+        id: unitpricediscount
+      - datatype:
+          type: STRING
+          length: 36
+          originalTypeFull: VARCHAR(36)
+        name: rowguid
+        expression:
+          expressionStatement: ${rowguid}
+          alias:
+            - name: rowguid
+              value: rowguid
+        id: rowguid
+      - datatype:
+          type: DATETIME
+          precision: 6
+          originalTypeFull: TIMESTAMP_NTZ(6)
+        name: modifieddate
+        expression:
+          expressionStatement: ${modifieddate}
+          alias:
+            - name: modifieddate
+              value: modifieddate
+        id: modifieddate

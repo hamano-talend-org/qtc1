@@ -1,8 +1,5 @@
 rules:
-  - name: AppendFriendlyNameToTable
-    actionType: RENAME_TABLE
-    scope:
-      whereTableName: '%'
+  - actionType: RENAME_TABLE
     action:
       renameType: NAME_MAPPING
       valueMapping:
@@ -10,12 +7,10 @@ rules:
         salesorderdetail: salesorderdetail_SalesOrderDetail
         salesorderheader: salesorderheader_SalesOrderHeader
         salesperson: salesperson_SalesPerson
-
-  - name: AppendFriendlyNameToColumn_Customer
-    actionType: RENAME_COLUMN
+    name: AppendFriendlyNameToTable
+  - actionType: RENAME_COLUMN
     scope:
-      whereTableName: customer
-      whereColumnName: '%'
+      whereTableName: customer_Customer
     action:
       renameType: NAME_MAPPING
       valueMapping:
@@ -26,12 +21,10 @@ rules:
         accountnumber: accountnumber_AccountNumber
         rowguid: rowguid_RowGuid
         modifieddate: modifieddate_ModifiedDate
-
-  - name: AppendFriendlyNameToColumn_SalesOrderHeader
-    actionType: RENAME_COLUMN
+    name: AppendFriendlyNameToColumn_Customer
+  - actionType: RENAME_COLUMN
     scope:
-      whereTableName: salesorderheader
-      whereColumnName: '%'
+      whereTableName: salesorderheader_SalesOrderHeader
     action:
       renameType: NAME_MAPPING
       valueMapping:
@@ -61,12 +54,10 @@ rules:
         comment: comment_Comment
         rowguid: rowguid_RowGuid
         modifieddate: modifieddate_ModifiedDate
-
-  - name: AppendFriendlyNameToColumn_SalesOrderDetail
-    actionType: RENAME_COLUMN
+    name: AppendFriendlyNameToColumn_SalesOrderHeader
+  - actionType: RENAME_COLUMN
     scope:
       whereTableName: salesorderdetail
-      whereColumnName: '%'
     action:
       renameType: NAME_MAPPING
       valueMapping:
@@ -81,12 +72,10 @@ rules:
         linetotal: linetotal_LineTotal
         rowguid: rowguid_RowGuid
         modifieddate: modifieddate_ModifiedDate
-
-  - name: AppendFriendlyNameToColumn_SalesPerson
-    actionType: RENAME_COLUMN
+    name: AppendFriendlyNameToColumn_SalesOrderDetail
+  - actionType: RENAME_COLUMN
     scope:
       whereTableName: salesperson
-      whereColumnName: '%'
     action:
       renameType: NAME_MAPPING
       valueMapping:
@@ -99,3 +88,4 @@ rules:
         saleslastyear: saleslastyear_SalesLastYear
         rowguid: rowguid_RowGuid
         modifieddate: modifieddate_ModifiedDate
+    name: AppendFriendlyNameToColumn_SalesPerson
